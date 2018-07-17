@@ -91,9 +91,12 @@ pipeline {
             when { expression { commonPipelineEnvironment.configuration.skipping.PRODUCTION_DEPLOYMENT } }
             steps { stageProductionDeployment script: this }
         }
-
     }
     post {
+        success{
+            echo "Thats how simple it is to use CI/CD with SAP S/4HANA Cloud SDK."
+            echo "Please bring the code SAP-GN-ITWASFUN to us and win a Goodie"
+        }
         always {
             script {
                 if (commonPipelineEnvironment.configuration.skipping.SEND_NOTIFICATION) {

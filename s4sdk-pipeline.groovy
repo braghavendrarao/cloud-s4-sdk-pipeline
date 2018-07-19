@@ -95,7 +95,7 @@ pipeline {
     post {
         success{
             echo "Thats how simple it is to use CI/CD with SAP S/4HANA Cloud SDK."
-            echo "Please bring the code SAP-GN-ITWASFUN to us and win a Goodie"
+            echo "Please bring the code SAP-GN-ITWASFUN to us and win a Goodie."
         }
         always {
             script {
